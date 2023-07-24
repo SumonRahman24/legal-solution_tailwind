@@ -29,6 +29,19 @@
         font-family: "Poppins", sans-serif;
       }
     </style>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#B68C5A'
+          }
+        }
+      }
+    }
+  </script>
   </head>
   <body>
     <header>
@@ -277,6 +290,52 @@
     </header>
 
     <main>
+
+      <!-- [ Clients Section ] -->
+      <section class="py-16 px-5 lg:px-40 hidden">
+        <div class="text-center pb-10">
+          <h2 class="font-bold text-4xl text-[#414040]">
+            What Our Client Say
+          </h2>
+          <p class="text-[#707070] text-sm mt-2">
+            There are many variations of passages of Lorem Ipsum available, but the majority have <br>
+             suffered alteration in some form, by injected humour.
+          </p>
+        </div>
+        <!-- slider container -->
+        <div class="carousel w-full  h-[400px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <!-- <img src="./images/slider-1.jpg" class="w-full" /> -->
+            <div class="bg-[img('./images/slider-1.jpg')]">
+
+            </div>
+            
+            <h2>I am</h2>
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/slider-2.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/slider-3.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+
+          </div>
+        </div>
+      </section>
+
       <!-- [ FAQ ] -->
       <section class="py-16 px-5 lg:px-20">
         <div class="text-center pb-10">
@@ -360,6 +419,132 @@
           </div>
         </div>
       </section>
+
+      <!-- [ Contact With Us ] -->
+      <section class="py-16 px-5 lg:px-20 hidden">
+        <div class="text-center pb-10">
+          <h2 class="font-bold text-4xl text-[#414040]">
+                Contact With Us
+          </h2>
+          <p class="text-[#707070] text-sm mt-2">
+            There are many variations of passages of Lorem Ipsum available, but the majority have <br>
+             suffered alteration in some form, by injected humour.
+          </p>
+        </div>
+
+        <!-- contact container -->
+        <div class="grid grid-cols-2 justify-items-center items-center">
+          <!-- left side content  -->
+            <div class="grid grid-cols-2  border-2 ">
+                <div class="bg-[#F3F3F3] w-[200px] h-[200px] flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M25 17.5C25 18.8261 24.4732 20.0979 23.5355 21.0355C22.5979 21.9732 21.3261 22.5 20 22.5C18.6739 22.5 17.4021 21.9732 16.4645 21.0355C15.5268 20.0979 15 18.8261 15 17.5C15 16.1739 15.5268 14.9021 16.4645 13.9645C17.4021 13.0268 18.6739 12.5 20 12.5C21.3261 12.5 22.5979 13.0268 23.5355 13.9645C24.4732 14.9021 25 16.1739 25 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32.5 17.5C32.5 29.4033 20 36.25 20 36.25C20 36.25 7.5 29.4033 7.5 17.5C7.5 14.1848 8.81696 11.0054 11.1612 8.66117C13.5054 6.31696 16.6848 5 20 5C23.3152 5 26.4946 6.31696 28.8388 8.66117C31.183 11.0054 32.5 14.1848 32.5 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <h2 class="text-[1.375rem] font-bold py-2">Address</h2>
+                    <p class="text-sm">A108 Adam Street,</p>
+                        <p class="text-sm">New York, NY 535022</p>
+            </div>
+            <div class="bg-[#F3F3F3] w-[200px] h-[200px] flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M25 17.5C25 18.8261 24.4732 20.0979 23.5355 21.0355C22.5979 21.9732 21.3261 22.5 20 22.5C18.6739 22.5 17.4021 21.9732 16.4645 21.0355C15.5268 20.0979 15 18.8261 15 17.5C15 16.1739 15.5268 14.9021 16.4645 13.9645C17.4021 13.0268 18.6739 12.5 20 12.5C21.3261 12.5 22.5979 13.0268 23.5355 13.9645C24.4732 14.9021 25 16.1739 25 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32.5 17.5C32.5 29.4033 20 36.25 20 36.25C20 36.25 7.5 29.4033 7.5 17.5C7.5 14.1848 8.81696 11.0054 11.1612 8.66117C13.5054 6.31696 16.6848 5 20 5C23.3152 5 26.4946 6.31696 28.8388 8.66117C31.183 11.0054 32.5 14.1848 32.5 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <h2 class="text-[1.375rem] font-bold py-2">Address</h2>
+                    <p class="text-sm">A108 Adam Street,</p>
+                        <p class="text-sm">New York, NY 535022</p>
+            </div>
+            <div class="bg-[#F3F3F3] w-[200px] h-[200px] flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M25 17.5C25 18.8261 24.4732 20.0979 23.5355 21.0355C22.5979 21.9732 21.3261 22.5 20 22.5C18.6739 22.5 17.4021 21.9732 16.4645 21.0355C15.5268 20.0979 15 18.8261 15 17.5C15 16.1739 15.5268 14.9021 16.4645 13.9645C17.4021 13.0268 18.6739 12.5 20 12.5C21.3261 12.5 22.5979 13.0268 23.5355 13.9645C24.4732 14.9021 25 16.1739 25 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32.5 17.5C32.5 29.4033 20 36.25 20 36.25C20 36.25 7.5 29.4033 7.5 17.5C7.5 14.1848 8.81696 11.0054 11.1612 8.66117C13.5054 6.31696 16.6848 5 20 5C23.3152 5 26.4946 6.31696 28.8388 8.66117C31.183 11.0054 32.5 14.1848 32.5 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <h2 class="text-[1.375rem] font-bold py-2">Address</h2>
+                    <p class="text-sm">A108 Adam Street,</p>
+                        <p class="text-sm">New York, NY 535022</p>
+            </div>
+            <div class="bg-[#F3F3F3] w-[200px] h-[200px] flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M25 17.5C25 18.8261 24.4732 20.0979 23.5355 21.0355C22.5979 21.9732 21.3261 22.5 20 22.5C18.6739 22.5 17.4021 21.9732 16.4645 21.0355C15.5268 20.0979 15 18.8261 15 17.5C15 16.1739 15.5268 14.9021 16.4645 13.9645C17.4021 13.0268 18.6739 12.5 20 12.5C21.3261 12.5 22.5979 13.0268 23.5355 13.9645C24.4732 14.9021 25 16.1739 25 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32.5 17.5C32.5 29.4033 20 36.25 20 36.25C20 36.25 7.5 29.4033 7.5 17.5C7.5 14.1848 8.81696 11.0054 11.1612 8.66117C13.5054 6.31696 16.6848 5 20 5C23.3152 5 26.4946 6.31696 28.8388 8.66117C31.183 11.0054 32.5 14.1848 32.5 17.5Z" stroke="#B68C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <h2 class="text-[1.375rem] font-bold py-2">Address</h2>
+                    <p class="text-sm">A108 Adam Street,</p>
+                        <p class="text-sm">New York, NY 535022</p>
+            </div>
+            </div>
+         
+        
+            <!-- right side content -->
+            <div class="flex flex-col gap-3 border-2 justify-center items-center">
+      
+              <input class="bg-[#F3F3F3] p-4 w-96 rounded-lg" type="text" placeholder="Your Name">
+               <input  class="bg-[#F3F3F3] p-4 w-96 rounded-lg"  type="email" placeholder="Your Email">
+               <input  class="bg-[#F3F3F3] p-4 w-96 rounded-lg"  type="text" placeholder="Subject">
+               <textarea  class="bg-[#F3F3F3] p-4 w-96 max-h-40 rounded-lg"  name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button class="btn btn-primary bg-primary border-none text-white w-96">Send Message</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- [ Footer Section ] -->
+    <footer class="footer p-10 bg-[#111] text-white text-base-content flex justify-around  flex-wrap ">
+      <div>
+        <span class="footer-title text-white"><img class="w-9/12 " src="./images/logo.png" alt=""></span> 
+       <p class="text-gray-400 text-sm">There are many variations of <br> 
+        passages of Lorem Ipsum
+         <br>available, but the majority have <br> 
+        suffered alteration in some <br>
+         form, by injected humour.</p>
+      </div> 
+      <div>
+        <span class="font-bold text-white">Useful Link</span> 
+        <a class="link link-hover text-gray-400">Home</a> 
+        <a class="link link-hover text-gray-400">About us</a> 
+        <a class="link link-hover text-gray-400">Cases</a> 
+        <a class="link link-hover text-gray-400">Blogs</a> 
+        <a class="link link-hover text-gray-400">Contact Us</a>
+      </div> 
+      <div class="flex flex-col gap-3.5">
+        <span class="font-bold text-white">Contact Now</span> 
+       <p  class="text-gray-400 text-xs">555 4th 5t NW, Washington <br>
+        DC 20530, United States</p>
+
+       <p class="text-gray-400 text-xs">+88 01750 000 000 <br>
+        +88 01750 000 000 </p>
+
+       <p class="text-gray-400 text-xs">info@gmail.com <br>
+        info@gmail.com  
+        DC 20530, United States</p>
+      </div> 
+     
+      <div>
+        <span class="font-bold text-white">Subscribe</span> 
+        <div class="form-control w-80">
+      <p class="text-gray-400 text-xs my-4">Subscribe for our latest & <br>
+         Articles. We Won’t Give You <br>
+          Spam Mails</p>
+
+          <div class="relative">
+            <input type="text" placeholder="Email Address" class="input input-bordered max-w-full pr-16" /> 
+            <button class="btn btn-primary bg-primary border-none  absolute top-0 right-0 rounded-md">
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <g clip-path="url(#clip0_12_37)">
+                <path d="M12.7279 21.2427L4.52197 16.8989C10.4846 13.6228 16.9629 11.3888 23.6775 10.2931C22.5826 17.0078 20.3492 23.4863 17.0738 29.4494L12.7279 21.2427ZM12.7279 21.2427L18.0312 15.9394" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_12_37">
+                  <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
