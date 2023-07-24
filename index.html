@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solution</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ( tailwind cdn link ) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ( daisy cdn link ) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- ( font ) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      h2 {
+        font-family: "EB Garamond", serif;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <div class="navbar bg-base-100 lg:px-28 hidden">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a
+                  >Home
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  >Cases
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  >Blogs
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  >Contact Us
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-sm block"
+            ><img class="" src="./images/logo2.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                >Home
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                >Service
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                >Cases
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                >Blogs
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                >Contact Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn capitalize font-bold text-white bg-[#B68C5A] pt-3.5 hidden sm:block"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+      <!-- [ Hero Section ] -->
+      <div
+        class="hero min-h-screen w-[1100px] m-auto hidden"
+        style="background-image: url('./images/banner.png')"
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="mb-5">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- [ FAQ ] -->
+      <section class="py-16 px-5 lg:px-20">
+        <div class="text-center pb-10">
+          <h2 class="font-bold text-4xl text-[#414040]">
+            Frequently Asked Any Questions
+          </h2>
+          <p class="text-[#707070] text-sm mt-2">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have <br />
+            suffered alteration in some form, by injected humour.
+          </p>
+        </div>
+
+        <!-- faq container -->
+        <div class="flex flex-col-reverse lg:flex-row gap-10">
+          <!-- faq content  -->
+          <div class="flex-1 flex flex-col gap-6">
+            <div class="collapse collapse-plus bg-base-200 ">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-2xl font-semibold">Are application fee waivers available?</h2>
+                <Translate text="Click to open this one and close others" />
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm ">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-2xl font-semibold">Are application fee waivers available?</h2>
+                <Translate text="Click to open this one and close others" />
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm ">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-2xl font-semibold">Are application fee waivers available?</h2>
+                <Translate text="Click to open this one and close others" />
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm ">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-2xl font-semibold">Are application fee waivers available?</h2>
+                <Translate text="Click to open this one and close others" />
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm ">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+        
+         
+            </div>
+            <!-- faq image -->
+            <div class="flex-1">
+                <img class="lg:w-96" src="./images/faq.png" alt="faq image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
